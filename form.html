@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+    <link rel = "stylesheet" href = "index.css"/>
+    <script rel = "script" src = "form.js"></script>
+</head>
+
+<body>
+    <div class = "head">
+        <Form name = "myForm" action = "form.js" onsubmit = "return validateForm()" method = "POST">
+            <div class = "container">
+
+                <div class = "row">
+
+                    <div class = "col-md-4">
+                        <label>Event Type:</label>
+                    </div>
+
+                    <div class = "col-md-8">
+                        <select id = "Events" class = "hot">
+                            <option value = "none" selected>Choose one</option>
+                            <option value = "Event-1">Event-1</option>
+                            <option value = "Event-2">Event-2</option>
+                            <option value = "Event-3">Event-3</option>
+                        </select>
+                    </div>
+
+                </div><br>
+
+                <div class = "row">
+
+                    <div class = "col-md-4">
+                        <label>Event Title:</label>
+                    </div>
+
+                    <div class = "col-md-8">
+                    <input id = "one" type = "text" name = "title">
+                    </div>
+
+                </div><br>
+
+                <div class = "row">
+
+                    <div class = "col-md-4">
+                        <label>Event Dates:</label>
+                    </div>
+
+                    <div class = "col-md-3">
+                    <input id = "two" type = "date" name = "startD">
+                    </div>
+
+                    <div class = "col-md-2">
+                        <label>UP TO</label>
+                    </div>
+
+                    <div class = "col-md-">
+                        <input id = "two" type = "date" name = "endD"/>
+                    </div>
+
+                </div><br>
+
+                <div class = "row">
+
+                    <div class = "col-md-4">
+                        <label>Posting Date:</label>
+                    </div>
+
+                    <div class = "col-md-3">
+                    <input id = "two" type = "date" name = "postD">
+                    </div>
+
+                </div><br><br>
+
+                <input type = "checkbox" name = "reg" value = "YES"/>
+                <label>
+                    <span style = "margin-left: 10px;">Is the Registration Required?</span>
+                </label><br>
+
+                <input type = "checkbox" name = "fam" value = "YES"/>
+                <label>
+                    <span style = "margin-left: 10px;">Is this event associated with any Family Programs?</span>
+                </label><br>
+
+                <input type = "checkbox" name = "Comp" value = "YES"/>
+                <label>
+                    <span style = "margin-left: 10px;">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</span>
+                </label><br>
+
+                <input type = "checkbox" name = "cont" value = "YES"/>
+                <label>
+                    <span style = "margin-left: 10px;">Is There a Point of Contact?</span>
+                </label><br>
+
+                <input type = "checkbox" name = "host" value = "YES"/>
+                <label>
+                    <span style = "margin-left: 10px;">Is There a Hosting Command Point of Contact?</span>
+                </label><br><br>
+
+
+                <div class = "buttons">
+                    <input type = "submit" value = "Save" name = ""/>
+                    <input type = "reset" value = "Cancel" name = ""/>
+                </div>
+            </div>   
+        </Form> 
+    </div>
+
+</body>
+
+</html>
